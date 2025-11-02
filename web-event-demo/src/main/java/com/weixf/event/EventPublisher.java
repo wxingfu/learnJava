@@ -55,6 +55,7 @@ public class EventPublisher {
         List<EventListener> eventListeners = listeners.get(event.getClass());
         if (eventListeners != null) {
             for (EventListener listener : eventListeners) {
+                // listener.onEvent(event);
                 // 异步执行监听器以避免阻塞
                 executorService.submit(new EventTask(listener, event));
             }
