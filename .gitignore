@@ -17,6 +17,7 @@
 /collection-study/target/
 /commons-utils/target/
 /design-pattern/target/
+/jdbcLearn/target/
 /liteflow-learn/target/
 /quartz-springboot-demo/target/
 /rpc-study/target/
@@ -36,6 +37,8 @@
 /spring-study/spring-security-test/target/
 /spring-study/spring-source-learn/target/
 /thread-study/target/
+/web-event-demo/target/
 /webservice-demo/target/
 /word-export/target/
+/word-export/src/main/resources/wordExport/
 
