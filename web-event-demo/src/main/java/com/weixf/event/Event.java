@@ -1,6 +1,9 @@
 package com.weixf.event;
 
 
+/**
+ * 事件类设计为final字段 + 无setter
+ */
 public abstract class Event {
 
     private final long timestamp;

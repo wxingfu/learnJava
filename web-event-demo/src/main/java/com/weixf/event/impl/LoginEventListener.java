@@ -5,6 +5,9 @@ import com.weixf.event.EventListener;
 import java.util.Date;
 
 
+/**
+ * 错误做法：在事件处理中发布新事件
+ */
 public class LoginEventListener implements EventListener<UserLoginEvent> {
 
     public void onEvent(UserLoginEvent event) {

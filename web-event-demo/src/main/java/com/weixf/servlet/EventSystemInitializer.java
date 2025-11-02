@@ -2,9 +2,7 @@ package com.weixf.servlet;// EventSystemInitializer.java
 
 import com.weixf.event.EventPublisher;
 import com.weixf.event.impl.LoginEventListener;
-import com.weixf.event.impl.LogoutEventListener;
 import com.weixf.event.impl.UserLoginEvent;
-import com.weixf.event.impl.UserLogoutEvent;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -18,7 +16,6 @@ public class EventSystemInitializer implements ServletContextListener {
 
         // 注册监听器
         publisher.addListener(UserLoginEvent.class, new LoginEventListener());
-        publisher.addListener(UserLogoutEvent.class, new LogoutEventListener());
 
         // 将事件发布器存储在ServletContext中供其他组件使用
         sce.getServletContext().setAttribute("eventPublisher", publisher);

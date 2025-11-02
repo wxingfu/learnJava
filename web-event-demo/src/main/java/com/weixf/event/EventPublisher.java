@@ -8,7 +8,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 
-
+/**
+ * 错误做法：在事件处理中发布新事件
+ */
 public class EventPublisher {
 
 
