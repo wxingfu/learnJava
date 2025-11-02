@@ -144,6 +144,21 @@
             <artifactId>axis2-transport-http</artifactId>
             <version>1.6.2</version>
         </dependency>
+
+
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.14.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna-platform</artifactId>
+            <version>5.14.0</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>
