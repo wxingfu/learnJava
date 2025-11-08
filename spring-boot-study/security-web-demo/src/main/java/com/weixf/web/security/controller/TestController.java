@@ -12,9 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author wxf
- * @date 2020-12-09
- * @description
+ *
+ * @since 2020-12-09
+ *
  */
 @RestController
 @RequestMapping("/test")

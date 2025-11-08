@@ -2,10 +2,10 @@ package com.weixf.creational.prototype;
 
 import java.util.Hashtable;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-08-25
+ *
+ * @since 2022-08-25
  */
 public class ShapeCache {
 

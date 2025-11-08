@@ -10,10 +10,10 @@ import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
 import java.security.SecureRandom;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-30
+ *
+ * @since 2022-06-30
  */
 public class AESTest {
 

@@ -5,7 +5,7 @@ import lombok.Setter;
 import org.springframework.stereotype.Component;
 
 /**
- * @author weixf
+ *
  * @since 2022-01-21
  */
 @Setter

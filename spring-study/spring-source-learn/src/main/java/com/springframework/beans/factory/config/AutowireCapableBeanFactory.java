@@ -3,10 +3,10 @@ package com.springframework.beans.factory.config;
 import com.springframework.beans.BeansException;
 import com.springframework.beans.factory.BeanFactory;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public interface AutowireCapableBeanFactory extends BeanFactory {
 

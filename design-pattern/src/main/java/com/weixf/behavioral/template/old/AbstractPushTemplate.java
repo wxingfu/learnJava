@@ -1,9 +1,9 @@
 package com.weixf.behavioral.template.old;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-08-23
+ *
+ * @since 2022-08-23
  * 核心思路是把一些通用的标准方法，在抽象父类里仅定义方法签名，实现逻辑交给子类。
  */
 public abstract class AbstractPushTemplate {

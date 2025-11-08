@@ -3,21 +3,22 @@
 
 <mapper namespace="com.weixf.security.mapper.SysUserMapper">
 
-	<!-- 查询用户的所有权限 -->
-	<select id="selectSysMenuByUserId" resultType="com.weixf.security.entity.SysMenu" parameterType="long">
-		SELECT DISTINCT m.* FROM sys_user_role ur
-			LEFT JOIN sys_role_menu rm ON ur.role_id = rm.role_id
-			LEFT JOIN sys_menu m ON rm.menu_id = m.menu_id
-		WHERE ur.user_id = #{userId}
-	</select>
+    <!-- 查询用户的所有权限 -->
+    <select id="selectSysMenuByUserId" resultType="com.weixf.security.entity.SysMenu" parameterType="long">
+        SELECT DISTINCT m.*
+        FROM sys_user_role ur
+                 LEFT JOIN sys_role_menu rm ON ur.role_id = rm.role_id
+                 LEFT JOIN sys_menu m ON rm.menu_id = m.menu_id
+        WHERE ur.user_id = #{userId}
+    </select>
 
-	<!-- 查询用户所有角色 -->
-	<select id="selectSysRoleByUserId" resultType="com.weixf.security.entity.SysRole" parameterType="long">
-		SELECT sr.* FROM sys_role sr
-		LEFT JOIN sys_user_role se ON se.role_id = sr.role_id
-		WHERE se.user_id = #{userId}
-	</select>
-
+    <!-- 查询用户所有角色 -->
+    <select id="selectSysRoleByUserId" resultType="com.weixf.security.entity.SysRole" parameterType="long">
+        SELECT sr.*
+        FROM sys_role sr
+                 LEFT JOIN sys_user_role se ON se.role_id = sr.role_id
+        WHERE se.user_id = #{userId}
+    </select>
 
 
 </mapper>

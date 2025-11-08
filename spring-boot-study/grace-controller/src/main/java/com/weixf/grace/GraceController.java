@@ -3,10 +3,10 @@ package com.weixf.grace;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-07
+ *
+ * @since 2022-06-07
  */
 @SpringBootApplication
 public class GraceController {

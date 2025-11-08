@@ -1,20 +1,20 @@
 package com.springframework.test.ioc;
 
 
+import com.springframework.beans.PropertyValue;
+import com.springframework.beans.PropertyValues;
+import com.springframework.beans.factory.config.BeanDefinition;
+import com.springframework.beans.factory.config.BeanReference;
+import com.springframework.beans.factory.support.DefaultListableBeanFactory;
 import com.springframework.test.bean.Car;
 import com.springframework.test.bean.Person;
 import org.junit.Assert;
 import org.junit.Test;
-import com.springframework.beans.PropertyValue;
-import com.springframework.beans.PropertyValues;
-import com.springframework.beans.factory.config.BeanReference;
-import com.springframework.beans.factory.config.BeanDefinition;
-import com.springframework.beans.factory.support.DefaultListableBeanFactory;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class PopulateBeanWithPropertyValuesTest {
 
@@ -40,17 +40,17 @@ public class PopulateBeanWithPropertyValuesTest {
     public void testPopulateBeanWithBean() throws Exception {
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
 
-        //注册Car实例
+        // 注册Car实例
         PropertyValues propertyValuesForCar = new PropertyValues();
         propertyValuesForCar.addPropertyValue(new PropertyValue("brand", "porsche"));
         BeanDefinition carBeanDefinition = new BeanDefinition(Car.class, propertyValuesForCar);
         beanFactory.registerBeanDefinition("car", carBeanDefinition);
 
-        //注册Person实例
+        // 注册Person实例
         PropertyValues propertyValuesForPerson = new PropertyValues();
         propertyValuesForPerson.addPropertyValue(new PropertyValue("name", "derek"));
         propertyValuesForPerson.addPropertyValue(new PropertyValue("age", 18));
-        //Person实例依赖Car实例
+        // Person实例依赖Car实例
         propertyValuesForPerson.addPropertyValue(new PropertyValue("car", new BeanReference("car")));
         BeanDefinition beanDefinition = new BeanDefinition(Person.class, propertyValuesForPerson);
         beanFactory.registerBeanDefinition("person", beanDefinition);

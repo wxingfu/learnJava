@@ -9,10 +9,10 @@ import com.springframework.context.ApplicationListener;
 import java.util.HashSet;
 import java.util.Set;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public abstract class AbstractApplicationEventMulticaster
         implements ApplicationEventMulticaster, BeanFactoryAware {

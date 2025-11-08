@@ -3,10 +3,10 @@ package com.weixf;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/*
+/**
  *
- * @author weixf
- * @date 2023-05-31
+ *
+ * @since 2023-05-31
  */
 @SpringBootApplication
 public class LiteFlowApp {

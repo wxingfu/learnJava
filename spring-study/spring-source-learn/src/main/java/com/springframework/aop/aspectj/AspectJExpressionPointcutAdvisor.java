@@ -4,10 +4,10 @@ import com.springframework.aop.Pointcut;
 import com.springframework.aop.PointcutAdvisor;
 import org.aopalliance.aop.Advice;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-24
+ *
+ * @since 2022-06-24
  */
 public class AspectJExpressionPointcutAdvisor implements PointcutAdvisor {
 

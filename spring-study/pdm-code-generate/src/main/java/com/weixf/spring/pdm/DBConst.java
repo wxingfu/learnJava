@@ -21,6 +21,7 @@ public class DBConst {
     public final static int Vendor_Bea = 4;
     public final static int Vendor_SF_jDTS = 5;
     public final static int Vendor_inet = 6;
+
     private DBConst() {
     }
 

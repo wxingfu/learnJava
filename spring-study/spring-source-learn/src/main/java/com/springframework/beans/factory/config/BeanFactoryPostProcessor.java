@@ -3,10 +3,10 @@ package com.springframework.beans.factory.config;
 import com.springframework.beans.BeansException;
 import com.springframework.beans.factory.ConfigurableListableBeanFactory;
 
-/*
+/**
  * 允许自定义修改BeanDefinition的属性值
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public interface BeanFactoryPostProcessor {
 

@@ -1,9 +1,9 @@
 package com.weixf.structural.filter;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-08-25
+ *
+ * @since 2022-08-25
  */
 public class Person {
 

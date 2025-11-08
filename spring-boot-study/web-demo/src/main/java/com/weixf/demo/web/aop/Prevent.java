@@ -7,10 +7,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-09-16
+ *
+ * @since 2022-09-16
  * 接口防刷注解
  * 使用：在相应需要防刷的方法上加上该注解，即可
  */

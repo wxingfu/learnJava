@@ -8,10 +8,10 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Hashtable;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-10-10
+ *
+ * @since 2022-10-10
  */
 public abstract class ImageEncoder implements ImageConsumer {
 

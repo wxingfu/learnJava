@@ -8,10 +8,10 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.util.Base64;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-07-26
+ *
+ * @since 2022-07-26
  */
 public class EncodeUtil {
 

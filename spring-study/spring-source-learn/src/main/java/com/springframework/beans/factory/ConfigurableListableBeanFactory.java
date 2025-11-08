@@ -6,10 +6,10 @@ import com.springframework.beans.factory.config.BeanDefinition;
 import com.springframework.beans.factory.config.BeanPostProcessor;
 import com.springframework.beans.factory.config.ConfigurableBeanFactory;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public interface ConfigurableListableBeanFactory extends ListableBeanFactory, AutowireCapableBeanFactory, ConfigurableBeanFactory {
 

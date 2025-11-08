@@ -3,10 +3,10 @@ package com.weixf.schema.maker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-16
+ *
+ * @since 2022-06-16
  */
 @SpringBootApplication
 public class SchemaMakerApp {

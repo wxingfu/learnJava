@@ -1,9 +1,9 @@
 package com.weixf.freemarker.vo;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-10-11
+ *
+ * @since 2022-10-11
  */
 public class RiskDutyInfoVO {
 

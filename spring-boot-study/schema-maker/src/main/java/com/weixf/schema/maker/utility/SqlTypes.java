@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import java.sql.Types;
 
 /**
- * @author weixf
+ *
  * @since 2022-01-21
  */
 @Component
@@ -32,6 +32,7 @@ public class SqlTypes {
     // 下面类型作为InputStream处理
     public final static int BLOB = Types.BLOB;
     public final static int LONGVARBINARY = Types.LONGVARBINARY;
+
     private SqlTypes() {
     }
 

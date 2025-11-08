@@ -11,10 +11,10 @@ import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-24
+ *
+ * @since 2022-06-24
  */
 public class AspectJExpressionPointcut implements Pointcut, ClassFilter, MethodMatcher {
 

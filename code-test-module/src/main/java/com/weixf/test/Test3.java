@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author wxf
+ *
  */
 public class Test3 {
 
@@ -48,7 +48,7 @@ public class Test3 {
 
             List<String> subList = list.subList(start, end);
 
-            System.out.println(StringUtils.join(subList,","));
+            System.out.println(StringUtils.join(subList, ","));
         }
     }
 }

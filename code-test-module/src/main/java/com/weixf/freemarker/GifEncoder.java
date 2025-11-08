@@ -6,10 +6,10 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Enumeration;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-10-10
+ *
+ * @since 2022-10-10
  */
 public class GifEncoder extends ImageEncoder {
 
@@ -70,6 +70,7 @@ public class GifEncoder extends ImageEncoder {
     // Define the storage for the packet accumulator
     byte[] accum = new byte[256];
     private boolean interlace = false;
+
     // / Constructor from Image.
     // @param img The image to encode.
     // @param out The stream to write the GIF to.
@@ -93,6 +94,7 @@ public class GifEncoder extends ImageEncoder {
     public GifEncoder(ImageProducer prod, OutputStream out) throws IOException {
         super(prod, out);
     }
+
     // / Constructor from ImageProducer with interlace setting.
     // @param prod The ImageProducer to encode.
     // @param out The stream to write the GIF to.

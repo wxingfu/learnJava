@@ -8,11 +8,7 @@ import java.io.File;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-/*
- *
- * @author weixf
- * @date 2022-05-20
- */
+
 public class PdfUtil {
 
     public static void main(String[] args) throws Exception {

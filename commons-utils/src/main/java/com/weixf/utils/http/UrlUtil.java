@@ -3,10 +3,10 @@ package com.weixf.utils.http;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-04-08
+ *
+ * @since 2022-04-08
  */
 public class UrlUtil {
 

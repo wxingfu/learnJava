@@ -13,10 +13,10 @@ import javax.mail.internet.MimeUtility;
 import java.util.Date;
 import java.util.Properties;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-08-30
+ *
+ * @since 2022-08-30
  */
 public class SendMailText_Picture_Enclosure {
 

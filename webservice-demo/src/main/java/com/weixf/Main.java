@@ -9,11 +9,7 @@ import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- *
- * @author weixf
- * @date 2022-06-20
- */
+
 public class Main {
 
     public static void main(String[] args) throws Exception {

@@ -19,10 +19,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
     public static final String BEAN_ELEMENT = "bean";

@@ -2,10 +2,10 @@ package com.weixf.behavioral.responsibility_chain;
 
 import java.util.Objects;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-08-23
+ *
+ * @since 2022-08-23
  */
 @FunctionalInterface
 public interface NewProcessor<T> {

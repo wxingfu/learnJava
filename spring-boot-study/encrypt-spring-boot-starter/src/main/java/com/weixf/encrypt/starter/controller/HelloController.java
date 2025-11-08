@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-17
+ *
+ * @since 2022-06-17
  */
 @RestController
 public class HelloController {

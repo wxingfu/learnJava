@@ -4,10 +4,10 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 import java.io.UnsupportedEncodingException;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-22
+ *
+ * @since 2022-06-22
  */
 public class Md5Util {
 

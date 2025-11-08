@@ -5,10 +5,10 @@ import com.springframework.core.convert.converter.Converter;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-24
+ *
+ * @since 2022-06-24
  */
 public class StringToLocalDateConverter implements Converter<String, LocalDate> {
 

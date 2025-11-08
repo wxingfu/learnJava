@@ -3,10 +3,10 @@ package com.weixf.freemarker;
 import java.util.Enumeration;
 import java.util.NoSuchElementException;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-10-10
+ *
+ * @since 2022-10-10
  */
 public class IntHashtableEnumerator implements Enumeration {
     boolean keys;

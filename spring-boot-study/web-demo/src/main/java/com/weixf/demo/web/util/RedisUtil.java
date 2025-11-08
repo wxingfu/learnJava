@@ -1,7 +1,6 @@
 package com.weixf.demo.web.util;
 
 import com.alibaba.fastjson.JSON;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.ListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -27,18 +26,25 @@ public class RedisUtil {
      * 不设置过期时长
      */
     public final static long NOT_EXPIRE = -1;
-    @Autowired
+
+    @Resource
     private RedisTemplate redisTemplate;
+
     @Resource(name = "redisTemplate")
     private ValueOperations<String, String> valueOperations;
+
     @Resource(name = "redisTemplate")
     private HashOperations<String, String, Object> hashOperations;
+
     @Resource(name = "redisTemplate")
     private ListOperations<String, Object> listOperations;
+
     @Resource(name = "redisTemplate")
     private SetOperations<String, Object> setOperations;
+
     @Resource(name = "redisTemplate")
     private ZSetOperations<String, Object> zSetOperations;
+
 
     public void set(String key, Object value, long expire) {
         valueOperations.set(key, toJson(value));

@@ -20,7 +20,7 @@ public class UtilsApp {
         Object value2 = CacheUtils.get("userName");
         System.out.println("第二次查询结果：" + value2);
 
-        FileUtils.searchFile("D:\\WorkSpace\\ideaProjects\\learnJava\\commons-util","FileUtils.java");
+        FileUtils.searchFile("D:\\WorkSpace\\ideaProjects\\learnJava\\commons-util", "FileUtils.java");
     }
 
 }

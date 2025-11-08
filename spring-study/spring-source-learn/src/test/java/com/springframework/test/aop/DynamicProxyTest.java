@@ -19,10 +19,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-24
+ *
+ * @since 2022-06-24
  */
 public class DynamicProxyTest {
 
@@ -68,7 +68,7 @@ public class DynamicProxyTest {
 
     @Test
     public void testBeforeAdvice() {
-        //设置BeforeAdvice
+        // 设置BeforeAdvice
         WorldServiceBeforeAdvice beforeAdvice = new WorldServiceBeforeAdvice();
         MethodBeforeAdviceInterceptor methodInterceptor = new MethodBeforeAdviceInterceptor(beforeAdvice);
         advisedSupport.setMethodInterceptor(methodInterceptor);
@@ -81,7 +81,7 @@ public class DynamicProxyTest {
     public void testAdvisor() {
         WorldService worldService = new WorldServiceImpl();
 
-        //Advisor是Pointcut和Advice的组合
+        // Advisor是Pointcut和Advice的组合
         String expression = "execution(* com.springframework.test.service.WorldService.explode(..))";
         AspectJExpressionPointcutAdvisor advisor = new AspectJExpressionPointcutAdvisor();
         advisor.setExpression(expression);

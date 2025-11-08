@@ -4,10 +4,10 @@ import com.weixf.grace.result.AppCode;
 import com.weixf.grace.result.StatusCode;
 import lombok.Getter;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-07
+ *
+ * @since 2022-06-07
  */
 @Getter
 public class APIException extends RuntimeException {

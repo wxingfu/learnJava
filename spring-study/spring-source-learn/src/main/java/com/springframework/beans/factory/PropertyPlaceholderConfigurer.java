@@ -12,10 +12,10 @@ import com.springframework.util.StringValueResolver;
 import java.io.IOException;
 import java.util.Properties;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-24
+ *
+ * @since 2022-06-24
  */
 public class PropertyPlaceholderConfigurer implements BeanFactoryPostProcessor {
 

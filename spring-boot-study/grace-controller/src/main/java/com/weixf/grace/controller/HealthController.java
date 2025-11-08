@@ -4,10 +4,10 @@ import com.weixf.grace.annotation.NotControllerResponseAdvice;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-07
+ *
+ * @since 2022-06-07
  */
 @RestController
 public class HealthController {

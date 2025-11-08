@@ -3,7 +3,7 @@ package com.weixf.schema.maker.utility;
 import org.springframework.stereotype.Component;
 
 /**
- * @author weixf
+ *
  * @since 2022-01-21
  */
 @Component
@@ -27,6 +27,7 @@ public class DBConst {
     public final static int Vendor_Bea = 4;
     public final static int Vendor_SF_jDTS = 5;
     public final static int Vendor_inet = 6;
+
     // Prevent instantiation
     private DBConst() {
     }

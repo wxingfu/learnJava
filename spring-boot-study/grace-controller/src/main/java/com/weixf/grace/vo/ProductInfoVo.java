@@ -7,10 +7,10 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-07
+ *
+ * @since 2022-06-07
  */
 @Data
 public class ProductInfoVo {

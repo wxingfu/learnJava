@@ -1,7 +1,6 @@
 package com.weixf.auth.security.service;
 
 import com.weixf.auth.security.entity.Admin;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.core.GrantedAuthority;
@@ -12,13 +11,14 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
 public class MyUserDetailsService implements UserDetailsService {
 
-    @Autowired
+    @Resource
     private JdbcTemplate jdbcTemplate;
 
     // 总目标：根据表单提交的用户名查询User对象，并装配角色、权限等信息

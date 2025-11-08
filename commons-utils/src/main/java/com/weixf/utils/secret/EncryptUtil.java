@@ -25,8 +25,6 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * 加密
- *
- * @author somewhere
  */
 public class EncryptUtil {
 

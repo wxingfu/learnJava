@@ -4,7 +4,6 @@ import com.weixf.menu.auth.custom.CommonService;
 import com.weixf.menu.auth.entity.SysRole;
 import com.weixf.menu.auth.entity.SysUser;
 import com.weixf.menu.auth.springboot.repository.SysUserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -13,6 +12,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,14 +21,12 @@ import java.util.List;
  * 因为在SpringSecurity中配置的相关参数需要是UserDetailsService类的数据
  */
 @Service
-public class SysUserService
-        extends CommonService<SysUser, Integer>
-        implements UserDetailsService {
+public class SysUserService extends CommonService<SysUser, Integer> implements UserDetailsService {
 
-    @Autowired
+    @Resource
     private SysUserRepository userRepository;
 
-    @Autowired
+    @Resource
     private SysRoleService roleService;
 
     /**

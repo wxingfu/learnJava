@@ -2,7 +2,14 @@ package com.weixf.quartz;
 
 import com.weixf.quartz.schedule.SimpleJob;
 import org.junit.Test;
-import org.quartz.*;
+import org.quartz.JobBuilder;
+import org.quartz.JobDetail;
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+import org.quartz.SchedulerFactory;
+import org.quartz.SimpleScheduleBuilder;
+import org.quartz.Trigger;
+import org.quartz.TriggerBuilder;
 import org.quartz.impl.StdSchedulerFactory;
 
 import java.util.concurrent.TimeUnit;
@@ -22,20 +29,20 @@ public class MultiQuartzTest {
 
         // 3、分别构建Trigger实例
         Trigger trigger = TriggerBuilder.newTrigger().withIdentity("trigger1", "trigger-group")
-                .startNow()//立即生效
+                .startNow()// 立即生效
                 .forJob(jobDetail)
                 .withSchedule(SimpleScheduleBuilder
                         .simpleSchedule()
-                        .withIntervalInSeconds(2) //每隔3s执行一次
+                        .withIntervalInSeconds(2) // 每隔3s执行一次
                         .repeatForever()) // 永久循环
                 .build();
         Trigger trigger2 = TriggerBuilder.newTrigger().withIdentity("trigger2", "trigger-group")
-                .startNow()//立即生效
+                .startNow()// 立即生效
                 .forJob(jobDetail)
                 .withSchedule(SimpleScheduleBuilder.simpleSchedule()
-                        .withIntervalInSeconds(3) //每隔5s执行一次
+                        .withIntervalInSeconds(3) // 每隔5s执行一次
                         .repeatForever()).build(); // 永久循环
-        //4、调度器中添加job
+        // 4、调度器中添加job
         scheduler.addJob(jobDetail, false);
         scheduler.scheduleJob(trigger);
         scheduler.scheduleJob(trigger2);

@@ -8,10 +8,10 @@ import com.springframework.beans.factory.config.BeanDefinition;
 
 import java.lang.reflect.Method;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class DisposableBeanAdapter implements DisposableBean {
 

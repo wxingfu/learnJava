@@ -22,10 +22,10 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-07-04
+ *
+ * @since 2022-07-04
  */
 @RestController
 @RequestMapping("/hello")

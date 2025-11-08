@@ -11,10 +11,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
 
-/*
+/**
  *
- * @author weixf
- * @date 2023-05-31
+ *
+ * @since 2023-05-31
  */
 @SpringBootTest
 public class LiteFlowAppTest {

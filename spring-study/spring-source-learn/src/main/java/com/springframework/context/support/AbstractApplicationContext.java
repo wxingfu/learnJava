@@ -17,10 +17,10 @@ import com.springframework.core.io.DefaultResourceLoader;
 import java.util.Collection;
 import java.util.Map;
 
-/*
+/**
  * 抽象应用上下文
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public abstract class AbstractApplicationContext
         extends DefaultResourceLoader

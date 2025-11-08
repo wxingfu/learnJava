@@ -2,10 +2,10 @@ package com.springframework.context.support;
 
 import com.springframework.beans.BeansException;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class ClassPathXmlApplicationContext extends AbstractXmlApplicationContext {
 

@@ -2,10 +2,10 @@ package com.weixf.encrypt.starter.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-17
+ *
+ * @since 2022-06-17
  */
 @ConfigurationProperties(prefix = "spring.encrypt")
 public class EncryptProperties {

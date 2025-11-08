@@ -22,8 +22,7 @@ public class WebAppSecurityConfig extends WebSecurityConfigurerAdapter {
     @Resource
     private MyUserDetailsService userDetailsService;
 
-    // @Autowired
-    // private MyPasswordEncoder passwordEncoder;
+
     @Bean
     public BCryptPasswordEncoder getPasswordEncoder() {
         return new BCryptPasswordEncoder();

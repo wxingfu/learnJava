@@ -5,10 +5,10 @@ import com.springframework.test.bean.Car;
 import org.junit.Assert;
 import org.junit.Test;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-24
+ *
+ * @since 2022-06-24
  */
 public class FactoryBeanTest {
 
@@ -17,6 +17,6 @@ public class FactoryBeanTest {
         ClassPathXmlApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("classpath:factory-bean.xml");
         Car car = applicationContext.getBean("car", Car.class);
-        Assert.assertEquals(car.getBrand(),"porsche");
+        Assert.assertEquals(car.getBrand(), "porsche");
     }
 }

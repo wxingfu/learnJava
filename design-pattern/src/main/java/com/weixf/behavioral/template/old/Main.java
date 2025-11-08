@@ -1,9 +1,9 @@
 package com.weixf.behavioral.template.old;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-08-23
+ *
+ * @since 2022-08-23
  */
 public class Main {
 

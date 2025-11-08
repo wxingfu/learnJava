@@ -5,10 +5,10 @@ import com.springframework.test.service.HelloService;
 import org.junit.Assert;
 import org.junit.Test;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class AwareInterfaceTest {
 

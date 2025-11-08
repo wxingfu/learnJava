@@ -3,10 +3,10 @@ package com.weixf.structural.filter;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-08-25
+ *
+ * @since 2022-08-25
  */
 public class CriteriaMale implements Criteria {
 

@@ -1,9 +1,9 @@
 package com.springframework.beans.factory.config;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class BeanReference {
 

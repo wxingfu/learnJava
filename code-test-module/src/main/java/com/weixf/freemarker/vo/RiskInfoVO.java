@@ -2,10 +2,10 @@ package com.weixf.freemarker.vo;
 
 import java.util.List;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-10-11
+ *
+ * @since 2022-10-11
  */
 public class RiskInfoVO {
 

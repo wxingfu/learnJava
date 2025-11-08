@@ -14,9 +14,8 @@ import java.util.Map;
 import java.util.Properties;
 
 /**
- * @author xieliang
- * @Description
- * @Date Create in 上午 11:40 2018-07-02
+ *
+ * @since Create in 上午 11:40 2018-07-02
  * Modified By:
  */
 public class IdCard {

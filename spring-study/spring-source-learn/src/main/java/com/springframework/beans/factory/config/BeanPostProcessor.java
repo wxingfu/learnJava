@@ -2,10 +2,10 @@ package com.springframework.beans.factory.config;
 
 import com.springframework.beans.BeansException;
 
-/*
+/**
  * 用于修改实例化后的bean的修改扩展点
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public interface BeanPostProcessor {
 

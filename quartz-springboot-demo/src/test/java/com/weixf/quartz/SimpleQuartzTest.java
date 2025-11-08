@@ -2,7 +2,16 @@ package com.weixf.quartz;
 
 import com.weixf.quartz.schedule.SimpleJob;
 import org.junit.Test;
-import org.quartz.*;
+import org.quartz.CronScheduleBuilder;
+import org.quartz.CronTrigger;
+import org.quartz.JobBuilder;
+import org.quartz.JobDetail;
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+import org.quartz.SchedulerFactory;
+import org.quartz.SimpleScheduleBuilder;
+import org.quartz.Trigger;
+import org.quartz.TriggerBuilder;
 import org.quartz.impl.StdSchedulerFactory;
 
 import java.util.concurrent.TimeUnit;
@@ -25,12 +34,12 @@ public class SimpleQuartzTest {
         Trigger trigger = TriggerBuilder.newTrigger()
                 // 指定group和name，这是唯一身份标识
                 .withIdentity("trigger-1", "trigger-group")
-                .startNow()  //立即生效
+                .startNow()  // 立即生效
                 .withSchedule(SimpleScheduleBuilder.simpleSchedule()
-                        .withIntervalInSeconds(2) //每隔2s执行一次
+                        .withIntervalInSeconds(2) // 每隔2s执行一次
                         .repeatForever())  // 永久执行
                 .build();
-        //4、将Job和Trigger交给Scheduler调度
+        // 4、将Job和Trigger交给Scheduler调度
         scheduler.scheduleJob(jobDetail, trigger);
         // 5、启动Scheduler
         scheduler.start();
@@ -54,11 +63,11 @@ public class SimpleQuartzTest {
         // 3、构建Trigger（触发器），定义执行频率和时长
         CronTrigger cronTrigger = TriggerBuilder.newTrigger()
                 .withIdentity("trigger-1", "trigger-group")
-                .startNow()  //立即生效
+                .startNow()  // 立即生效
                 .withSchedule(CronScheduleBuilder.cronSchedule("* 30 10 ? * 1/5 *"))
                 .build();
 
-        //4、执行
+        // 4、执行
         scheduler.scheduleJob(jobDetail, cronTrigger);
         scheduler.start();
         // 休眠，决定调度器运行时间，这里设置30s

@@ -1,10 +1,5 @@
 package com.weixf.annotation;
 
-/*
- *
- * @author weixf
- * @date 2022-05-03
- */
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

@@ -3,10 +3,10 @@ package com.weixf.dynamic.datasource.provider;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 import com.weixf.dynamic.datasource.prop.DruidProperties;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
+import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +16,7 @@ import java.util.Set;
 @Configuration
 @EnableConfigurationProperties(DruidProperties.class)
 public class YamlDynamicDataSourceProvider implements DynamicDataSourceProvider {
-    @Autowired
+    @Resource
     DruidProperties druidProperties;
 
     @Override

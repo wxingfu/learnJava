@@ -20,7 +20,7 @@ class Phone {
 }
 
 /**
- * @Description: 8锁
+ * 8锁
  * <p>
  * 1 标准访问，先打印短信还是邮件
  * ------sendSMS

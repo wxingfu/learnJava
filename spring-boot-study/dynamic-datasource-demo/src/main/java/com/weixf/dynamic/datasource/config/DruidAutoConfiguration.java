@@ -4,12 +4,12 @@ import com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatPropertie
 import com.alibaba.druid.util.Utils;
 import com.weixf.dynamic.datasource.dynamic.DynamicDataSource;
 import com.weixf.dynamic.datasource.provider.DynamicDataSourceProvider;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.annotation.Resource;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -21,7 +21,7 @@ import java.io.IOException;
 
 @Configuration
 public class DruidAutoConfiguration {
-    @Autowired
+    @Resource
     DynamicDataSourceProvider dynamicDataSourceProvider;
 
     @Bean

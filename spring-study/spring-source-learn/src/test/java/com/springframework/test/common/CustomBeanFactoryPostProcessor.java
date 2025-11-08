@@ -7,10 +7,10 @@ import com.springframework.beans.factory.ConfigurableListableBeanFactory;
 import com.springframework.beans.factory.config.BeanDefinition;
 import com.springframework.beans.factory.config.BeanFactoryPostProcessor;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class CustomBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 
@@ -19,7 +19,7 @@ public class CustomBeanFactoryPostProcessor implements BeanFactoryPostProcessor 
         System.out.println("CustomBeanFactoryPostProcessor#postProcessBeanFactory");
         BeanDefinition personBeanDefinition = beanFactory.getBeanDefinition("person");
         PropertyValues propertyValues = personBeanDefinition.getPropertyValues();
-        //将person的name属性改为ivy
+        // 将person的name属性改为ivy
         propertyValues.addPropertyValue(new PropertyValue("name", "ivy"));
     }
 }

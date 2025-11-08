@@ -1,9 +1,9 @@
 package com.weixf.behavioral.observer.old;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-08-23
+ *
+ * @since 2022-08-23
  */
 public class OrderObserver implements Observer {
     @Override

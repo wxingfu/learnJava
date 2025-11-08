@@ -1,9 +1,9 @@
 package com.weixf.creational.factory;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-08-24
+ *
+ * @since 2022-08-24
  */
 public class Rectangle implements Shape {
     @Override

@@ -9,7 +9,6 @@ import com.weixf.security.security.handler.UserLoginFailureHandler;
 import com.weixf.security.security.handler.UserLoginSuccessHandler;
 import com.weixf.security.security.handler.UserLogoutSuccessHandler;
 import com.weixf.security.security.jwt.JWTAuthenticationTokenFilter;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -21,6 +20,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler;
 
+import javax.annotation.Resource;
+
 /**
  * SpringSecurity配置类
  */
@@ -31,32 +32,32 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     /**
      * 自定义登录成功处理器
      */
-    @Autowired
+    @Resource
     private UserLoginSuccessHandler userLoginSuccessHandler;
     /**
      * 自定义登录失败处理器
      */
-    @Autowired
+    @Resource
     private UserLoginFailureHandler userLoginFailureHandler;
     /**
      * 自定义注销成功处理器
      */
-    @Autowired
+    @Resource
     private UserLogoutSuccessHandler userLogoutSuccessHandler;
     /**
      * 自定义暂无权限处理器
      */
-    @Autowired
+    @Resource
     private UserAuthAccessDeniedHandler userAuthAccessDeniedHandler;
     /**
      * 自定义未登录的处理器
      */
-    @Autowired
+    @Resource
     private UserAuthenticationEntryPointHandler userAuthenticationEntryPointHandler;
     /**
      * 自定义登录逻辑验证器
      */
-    @Autowired
+    @Resource
     private UserAuthenticationProvider userAuthenticationProvider;
 
     /**

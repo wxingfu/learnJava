@@ -7,20 +7,20 @@ import com.weixf.schema.maker.table.Convert;
 import com.weixf.schema.maker.table.Schema;
 import com.weixf.schema.maker.utility.DBConst;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-20
+ *
+ * @since 2022-06-20
  */
 @Slf4j
 @Component
@@ -48,7 +48,7 @@ public class Maker {
     // 表名，如果指定了表名，则指生成指定表的相关文件
     @Value("${schema.table-name}")
     public String tableName;
-    @Autowired
+    @Resource
     private MyRepository myRepository;
 
     public Maker() {

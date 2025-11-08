@@ -3,10 +3,10 @@ package com.weixf.behavioral.observer.old;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-08-23
+ *
+ * @since 2022-08-23
  */
 public interface NewSubject {
 

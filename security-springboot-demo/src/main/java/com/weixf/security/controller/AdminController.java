@@ -10,12 +10,12 @@ import com.weixf.security.security.entity.SecurityUser;
 import com.weixf.security.service.SysMenuService;
 import com.weixf.security.service.SysRoleService;
 import com.weixf.security.service.SysUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -25,11 +25,13 @@ import java.util.Map;
 @RequestMapping("/admin")
 public class AdminController {
 
-    @Autowired
+    @Resource
     private SysUserService sysUserService;
-    @Autowired
+
+    @Resource
     private SysRoleService sysRoleService;
-    @Autowired
+
+    @Resource
     private SysMenuService sysMenuService;
 
 

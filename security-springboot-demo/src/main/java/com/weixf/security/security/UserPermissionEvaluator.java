@@ -4,11 +4,11 @@ package com.weixf.security.security;
 import com.weixf.security.entity.SysMenu;
 import com.weixf.security.security.entity.SecurityUser;
 import com.weixf.security.service.SysUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.PermissionEvaluator;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.Set;
  */
 @Component
 public class UserPermissionEvaluator implements PermissionEvaluator {
-    @Autowired
+    @Resource
     private SysUserService sysUserService;
 
     /**

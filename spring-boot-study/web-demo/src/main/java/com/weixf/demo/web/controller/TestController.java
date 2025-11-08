@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-09-21
+ *
+ * @since 2022-09-21
  */
 @RestController
 @RequestMapping("/claim")

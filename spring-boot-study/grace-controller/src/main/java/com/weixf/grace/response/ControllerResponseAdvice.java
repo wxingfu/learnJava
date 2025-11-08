@@ -14,10 +14,10 @@ import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-07
+ *
+ * @since 2022-06-07
  */
 @RestControllerAdvice(basePackages = {"com.weixf"})
 public class ControllerResponseAdvice implements ResponseBodyAdvice<Object> {

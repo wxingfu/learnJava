@@ -5,10 +5,10 @@ import com.springframework.test.service.WorldService;
 import org.junit.Assert;
 import org.junit.Test;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-24
+ *
+ * @since 2022-06-24
  */
 public class AutoProxyTest {
 
@@ -16,7 +16,7 @@ public class AutoProxyTest {
     public void testAutoProxy() throws Exception {
         ClassPathXmlApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("classpath:auto-proxy.xml");
-        //获取代理对象
+        // 获取代理对象
         WorldService worldService = applicationContext.getBean("worldService", WorldService.class);
         worldService.explode();
     }
@@ -25,7 +25,7 @@ public class AutoProxyTest {
     public void testPopulateProxyBeanWithPropertyValues() throws Exception {
         ClassPathXmlApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("classpath:populate-proxy-bean-with-property-values.xml");
-        //获取代理对象
+        // 获取代理对象
         WorldService worldService = applicationContext.getBean("worldService", WorldService.class);
         worldService.explode();
 

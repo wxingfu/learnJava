@@ -11,16 +11,15 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.function.Function;
 
-/*
+/**
  * 本地缓存提供者服务 (Guava Cache)
- *
+ * <p>
  * 注意事项
  * Guava Cache初始化容器时，支持缓存过期策略，类似FIFO、LRU和LFU等算法。
  * expireAfterWrite：最后一次写入后的一段时间移出。
  * expireAfterAccess：最后一次访问后的一段时间移出。
  *
- * @author weixf
- * @date 2023-02-06
+ * @since 2023-02-06
  */
 public class LocalCacheProviderImpl implements CacheProviderService {
 

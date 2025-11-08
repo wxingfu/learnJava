@@ -3,10 +3,10 @@ package com.weixf.freemarker;
 import java.util.Dictionary;
 import java.util.Enumeration;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-10-10
+ *
+ * @since 2022-10-10
  */
 public class IntHashtable extends Dictionary implements Cloneable {
 

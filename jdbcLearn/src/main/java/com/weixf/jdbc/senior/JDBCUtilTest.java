@@ -49,10 +49,10 @@ public class JDBCUtilTest {
         // 1.创建DAO实现类对象
         EmployeeDao employeeDao = new EmployeeDaoImpl();
 
-        //2.调用查询所有方法
+        // 2.调用查询所有方法
         List<Employee> employeeList = employeeDao.selectAll();
 
-        //3.处理结果
+        // 3.处理结果
         for (Employee employee : employeeList) {
             System.out.println("employee = " + employee);
         }

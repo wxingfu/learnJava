@@ -7,8 +7,8 @@ import java.util.concurrent.Executors;
 
 /*
  *
- * @author weixf
- * @date 2023-04-26
+ *
+ * @since 2023-04-26
  */
 public class Test14 {
 
@@ -51,9 +51,9 @@ public class Test14 {
         // System.out.println(" 初始化容量为10000000，耗时 ： " + (s4 - s3));
 
 
-        BigDecimal g =  BigDecimal.valueOf(0.1F);
+        BigDecimal g = BigDecimal.valueOf(0.1F);
 
-        Map<String,Object> map = null;
+        Map<String, Object> map = null;
         if (map.isEmpty()) {
 
         }

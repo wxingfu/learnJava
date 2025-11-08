@@ -13,7 +13,7 @@ public class MyTest {
 
     @Test
     public void getExcelData() throws Exception {
-        //导出数据
+        // 导出数据
         List<SlrEmpSalary> dataList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             SlrEmpSalary slrEmpSalary = new SlrEmpSalary();
@@ -22,7 +22,7 @@ public class MyTest {
             slrEmpSalary.setSeqNumber(123 + i);
             dataList.add(slrEmpSalary);
         }
-        //导出
+        // 导出
         File file = new File("ttttt.xls");
         FileOutputStream fileOutputStream = new FileOutputStream(file);
         ExcelUtils.exportExcel(fileOutputStream, dataList, SlrEmpSalary.class, null, "aaaaa");

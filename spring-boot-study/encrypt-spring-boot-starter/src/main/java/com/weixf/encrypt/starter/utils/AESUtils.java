@@ -4,10 +4,10 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 import java.util.Base64;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-17
+ *
+ * @since 2022-06-17
  */
 public class AESUtils {
 

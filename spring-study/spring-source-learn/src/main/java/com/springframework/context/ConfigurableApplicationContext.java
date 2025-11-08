@@ -2,10 +2,10 @@ package com.springframework.context;
 
 import com.springframework.beans.BeansException;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public interface ConfigurableApplicationContext extends ApplicationContext {
 

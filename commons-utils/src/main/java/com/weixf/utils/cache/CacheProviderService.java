@@ -2,11 +2,11 @@ package com.weixf.utils.cache;
 
 import java.util.function.Function;
 
-/*
+/**
  * 常见缓存功能接口
  * 未提供特殊场景下用到的统计类的接口、分布式锁、自增（减）等
- * @author weixf
- * @date 2023-02-06
+ *
+ * @since 2023-02-06
  */
 public interface CacheProviderService {
 

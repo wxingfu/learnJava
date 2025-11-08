@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.Vector;
 
 /**
- * @author weixf
+ *
  * @since 2022-01-21
  */
 @Component
@@ -17,7 +17,7 @@ public class Errors implements Cloneable {
 
     /**
      * -- GETTER --
-     *  得到容器中的错误的个数
+     * 得到容器中的错误的个数
      *
      * @return int
      */

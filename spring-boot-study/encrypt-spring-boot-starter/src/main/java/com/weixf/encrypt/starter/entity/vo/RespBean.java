@@ -1,9 +1,9 @@
 package com.weixf.encrypt.starter.entity.vo;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-17
+ *
+ * @since 2022-06-17
  */
 public class RespBean {
 

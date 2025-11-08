@@ -1,13 +1,19 @@
 package com.weixf.spring;
 
-import com.weixf.spring.pdm.*;
+import com.weixf.spring.pdm.ConvertPDM;
+import com.weixf.spring.pdm.DBConst;
+import com.weixf.spring.pdm.PDM;
+import com.weixf.spring.pdm.PDMColumn;
+import com.weixf.spring.pdm.PDMKey;
+import com.weixf.spring.pdm.PDMTable;
+import com.weixf.spring.pdm.Parser;
 import com.weixf.spring.utils.CommonUtil;
 import freemarker.template.Configuration;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +23,7 @@ import java.util.Properties;
 @SpringBootTest
 public class MyTest {
 
-    @Autowired
+    @Resource
     private Configuration configuration;
 
     @Test

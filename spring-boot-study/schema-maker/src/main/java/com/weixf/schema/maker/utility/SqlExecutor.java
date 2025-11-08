@@ -2,18 +2,19 @@ package com.weixf.schema.maker.utility;
 
 import com.weixf.schema.maker.repository.MyRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
+
 /**
- * @author weixf
+ *
  * @since 2022-01-21
  */
 @Slf4j
 @Component
 public class SqlExecutor {
 
-    @Autowired
+    @Resource
     private MyRepository myRepository;
 
     public String getOneValue(String sql) {

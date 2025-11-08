@@ -17,8 +17,10 @@ import java.util.Optional;
  * @param <ID>
  */
 public class CommonService<T, ID> {
+
     @Autowired(required = false)
     private CommonRepository<T, ID> baseDAO;
+
 
     public List<T> findAll() {
         return baseDAO.findAll();

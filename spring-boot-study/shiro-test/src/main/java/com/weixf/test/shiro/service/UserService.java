@@ -3,15 +3,15 @@ package com.weixf.test.shiro.service;
 
 import com.weixf.test.shiro.dao.UserDao;
 import com.weixf.test.shiro.domain.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
 public class UserService {
 
-    @Autowired
+    @Resource
     private UserDao userDao;
 
     public User findByName(String name) {

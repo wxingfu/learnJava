@@ -3,10 +3,10 @@ package com.weixf.utils.math;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-/*
- *用于高精确处理常用的数学运算
- * @author weixf
- * @date 2022-12-01
+/**
+ * 用于高精确处理常用的数学运算
+ *
+ * @since 2022-12-01
  */
 
 public class ArithmeticUtils {

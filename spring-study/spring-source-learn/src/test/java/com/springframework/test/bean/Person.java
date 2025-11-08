@@ -2,8 +2,9 @@ package com.springframework.test.bean;
 
 import com.springframework.beans.factory.DisposableBean;
 import com.springframework.beans.factory.InitializingBean;
-import com.springframework.beans.factory.annotation.Autowired;
 import com.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
 
 
 @Component
@@ -13,7 +14,7 @@ public class Person implements InitializingBean, DisposableBean {
 
     private int age;
 
-    @Autowired
+    @Resource
     private Car car;
 
     public void customInitMethod() {

@@ -2,11 +2,7 @@ package com.weixf.annotation;
 
 import java.lang.reflect.Method;
 
-/*
- *
- * @author weixf
- * @date 2022-05-03
- */
+
 public class Main {
 
     public static void main(String[] args) throws NoSuchMethodException {

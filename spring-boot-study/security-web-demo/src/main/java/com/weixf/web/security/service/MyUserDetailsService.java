@@ -3,7 +3,6 @@ package com.weixf.web.security.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.weixf.web.security.entity.Users;
 import com.weixf.web.security.mapper.UsersMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;
@@ -13,17 +12,17 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @author wxf
- * @date 2020-12-09
- * @description
+ *
+ * @since 2020-12-09
  */
 @Service("userDetailsService")
 public class MyUserDetailsService implements UserDetailsService {
 
-    @Autowired
+    @Resource
     private UsersMapper usersMapper;
 
 

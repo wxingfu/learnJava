@@ -9,10 +9,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-10-10
+ *
+ * @since 2022-10-10
  */
 public class BarCode {
 

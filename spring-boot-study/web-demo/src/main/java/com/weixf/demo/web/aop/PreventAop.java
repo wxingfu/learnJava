@@ -10,10 +10,10 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ObjectUtils;
 
+import javax.annotation.Resource;
 import java.lang.reflect.Method;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
@@ -27,7 +27,7 @@ public class PreventAop {
 
     private static final Logger log = LoggerFactory.getLogger(PreventAop.class);
 
-    @Autowired
+    @Resource
     private RedisUtil redisUtil;
 
 

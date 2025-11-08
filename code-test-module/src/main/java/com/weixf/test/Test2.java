@@ -5,7 +5,7 @@ import org.jdom2.JDOMException;
 import java.io.IOException;
 
 /**
- * @author wxf
+ *
  */
 public class Test2 {
 

@@ -4,19 +4,19 @@ import com.weixf.menu.auth.custom.CommonService;
 import com.weixf.menu.auth.entity.TbMenu;
 import com.weixf.menu.auth.security.UserUtils;
 import com.weixf.menu.auth.springboot.repository.TbMenuRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class TbMenuService extends CommonService<TbMenu, Integer> {
 
-    @Autowired
+    @Resource
     private TbMenuRepository menuRepository;
 
-    @Autowired
+    @Resource
     private UserUtils userUtils;
 
     /**

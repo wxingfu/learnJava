@@ -21,10 +21,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-10-09
+ *
+ * @since 2022-10-09
  */
 public class FreemarkerUtil {
 

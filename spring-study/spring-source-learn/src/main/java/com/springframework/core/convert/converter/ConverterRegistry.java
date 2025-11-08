@@ -1,9 +1,9 @@
 package com.springframework.core.convert.converter;
 
-/*
+/**
  * 类型转换器注册接口
- * @author weixf
- * @date 2022-06-24
+ *
+ * @since 2022-06-24
  */
 public interface ConverterRegistry {
 

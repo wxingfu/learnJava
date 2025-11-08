@@ -4,10 +4,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-/*
+/**
  * classpath下的资源
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class ClassPathResource implements Resource {
     private final String path;

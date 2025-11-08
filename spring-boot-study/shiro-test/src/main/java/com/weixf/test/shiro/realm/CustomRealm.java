@@ -15,8 +15,8 @@ import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.crypto.hash.Md5Hash;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.annotation.Resource;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -25,7 +25,7 @@ import java.util.Set;
  */
 public class CustomRealm extends AuthorizingRealm {
 
-    @Autowired
+    @Resource
     private UserService userService;
 
     public static void main(String[] args) {

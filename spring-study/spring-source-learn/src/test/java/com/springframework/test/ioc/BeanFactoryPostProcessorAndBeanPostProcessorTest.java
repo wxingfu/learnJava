@@ -9,10 +9,10 @@ import com.springframework.test.common.CustomerBeanPostProcessor;
 import org.junit.Assert;
 import org.junit.Test;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class BeanFactoryPostProcessorAndBeanPostProcessorTest {
 
@@ -22,13 +22,13 @@ public class BeanFactoryPostProcessorAndBeanPostProcessorTest {
         XmlBeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(beanFactory);
         beanDefinitionReader.loadBeanDefinitions("classpath:spring.xml");
 
-        //在所有BeanDefintion加载完成后，但在bean实例化之前，修改BeanDefinition的属性值
+        // 在所有BeanDefintion加载完成后，但在bean实例化之前，修改BeanDefinition的属性值
         CustomBeanFactoryPostProcessor beanFactoryPostProcessor = new CustomBeanFactoryPostProcessor();
         beanFactoryPostProcessor.postProcessBeanFactory(beanFactory);
 
         Person person = (Person) beanFactory.getBean("person");
         System.out.println(person);
-        //name属性在CustomBeanFactoryPostProcessor中被修改为ivy
+        // name属性在CustomBeanFactoryPostProcessor中被修改为ivy
         Assert.assertEquals(person.getName(), "ivy");
     }
 
@@ -38,13 +38,13 @@ public class BeanFactoryPostProcessorAndBeanPostProcessorTest {
         XmlBeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(beanFactory);
         beanDefinitionReader.loadBeanDefinitions("classpath:spring.xml");
 
-        //添加bean实例化后的处理器
+        // 添加bean实例化后的处理器
         CustomerBeanPostProcessor customerBeanPostProcessor = new CustomerBeanPostProcessor();
         beanFactory.addBeanPostProcessor(customerBeanPostProcessor);
 
         Car car = (Car) beanFactory.getBean("car");
         System.out.println(car);
-        //brand属性在CustomerBeanPostProcessor中被修改为lamborghini
+        // brand属性在CustomerBeanPostProcessor中被修改为lamborghini
         Assert.assertEquals(car.getBrand(), "lamborghini");
     }
 }

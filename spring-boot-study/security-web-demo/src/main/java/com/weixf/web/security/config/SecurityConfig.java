@@ -1,6 +1,5 @@
 package com.weixf.web.security.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -12,21 +11,22 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 
+import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 /**
- * @author wxf
- * @date 2020-12-09
- * @description
+ *
+ * @since 2020-12-09
+ *
  */
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired
+    @Resource
     private UserDetailsService userDetailsService;
 
     // 注入数据源
-    @Autowired
+    @Resource
     private DataSource dataSource;
 
     // 配置对象

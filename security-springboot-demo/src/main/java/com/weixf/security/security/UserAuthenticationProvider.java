@@ -4,7 +4,6 @@ import com.weixf.security.entity.SysRole;
 import com.weixf.security.security.entity.SecurityUser;
 import com.weixf.security.security.service.SecurityUserDetailsService;
 import com.weixf.security.service.SysUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.LockedException;
@@ -17,6 +16,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -26,9 +26,9 @@ import java.util.Set;
  */
 @Component
 public class UserAuthenticationProvider implements AuthenticationProvider {
-    @Autowired
+    @Resource
     private SecurityUserDetailsService securityUserDetailsService;
-    @Autowired
+    @Resource
     private SysUserService sysUserService;
 
     @Override

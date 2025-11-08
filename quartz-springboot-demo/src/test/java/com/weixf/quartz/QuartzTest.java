@@ -4,11 +4,14 @@ package com.weixf.quartz;
 import com.weixf.quartz.schedule.MajorJob;
 import com.weixf.quartz.utils.QuartzUtils;
 import org.junit.Test;
-import org.quartz.*;
-import org.quartz.impl.StdSchedulerFactory;
+import org.quartz.JobBuilder;
+import org.quartz.JobDetail;
+import org.quartz.SchedulerException;
+import org.quartz.SimpleScheduleBuilder;
+import org.quartz.Trigger;
+import org.quartz.TriggerBuilder;
 
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 public class QuartzTest {
 

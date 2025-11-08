@@ -4,10 +4,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-07-06
+ *
+ * @since 2022-07-06
  */
 @MappedSuperclass
 public class BaseEntity<ID> {

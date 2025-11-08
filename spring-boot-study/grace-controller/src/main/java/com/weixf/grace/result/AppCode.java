@@ -2,10 +2,10 @@ package com.weixf.grace.result;
 
 import lombok.Getter;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-07
+ *
+ * @since 2022-06-07
  */
 @Getter
 public enum AppCode implements StatusCode {

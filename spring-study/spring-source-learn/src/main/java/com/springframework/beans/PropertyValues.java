@@ -3,10 +3,10 @@ package com.springframework.beans;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class PropertyValues {
 

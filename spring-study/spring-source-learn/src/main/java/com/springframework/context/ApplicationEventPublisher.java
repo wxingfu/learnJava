@@ -1,9 +1,9 @@
 package com.springframework.context;
 
-/*
+/**
  * 事件发布者接口
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public interface ApplicationEventPublisher {
 

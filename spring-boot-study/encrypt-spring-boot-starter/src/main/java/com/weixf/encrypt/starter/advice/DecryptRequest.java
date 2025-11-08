@@ -3,7 +3,6 @@ package com.weixf.encrypt.starter.advice;
 import com.weixf.encrypt.starter.anno.Decrypt;
 import com.weixf.encrypt.starter.config.EncryptProperties;
 import com.weixf.encrypt.starter.utils.AESUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.HttpHeaders;
@@ -12,20 +11,22 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.RequestBodyAdviceAdapter;
 
+import javax.annotation.Resource;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Type;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-17
+ *
+ * @since 2022-06-17
  */
 @EnableConfigurationProperties(EncryptProperties.class)
 @ControllerAdvice
 public class DecryptRequest extends RequestBodyAdviceAdapter {
-    @Autowired
+
+    @Resource
     EncryptProperties encryptProperties;
 
     @Override

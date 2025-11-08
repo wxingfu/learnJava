@@ -3,7 +3,7 @@ package com.weixf.schema.maker.utility;
 import org.springframework.stereotype.Component;
 
 /**
- * @author weixf
+ *
  * @since 2022-01-21
  */
 @Component

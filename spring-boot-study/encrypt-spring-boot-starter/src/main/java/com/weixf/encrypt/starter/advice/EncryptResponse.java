@@ -5,7 +5,6 @@ import com.weixf.encrypt.starter.anno.Encrypt;
 import com.weixf.encrypt.starter.config.EncryptProperties;
 import com.weixf.encrypt.starter.entity.vo.RespBean;
 import com.weixf.encrypt.starter.utils.AESUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
@@ -15,16 +14,18 @@ import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
-/*
+import javax.annotation.Resource;
+
+/**
  *
- * @author weixf
- * @date 2022-06-17
+ *
+ * @since 2022-06-17
  */
 @EnableConfigurationProperties(EncryptProperties.class)
 @ControllerAdvice
 public class EncryptResponse implements ResponseBodyAdvice<RespBean> {
 
-    @Autowired
+    @Resource
     EncryptProperties encryptProperties;
     private final ObjectMapper om = new ObjectMapper();
 

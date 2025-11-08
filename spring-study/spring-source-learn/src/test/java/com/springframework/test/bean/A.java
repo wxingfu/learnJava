@@ -3,15 +3,16 @@ package com.springframework.test.bean;
 
 public class A {
 
-	private B b;
+    private B b;
 
-	public void func(){}
+    public void func() {
+    }
 
-	public B getB() {
-		return b;
-	}
+    public B getB() {
+        return b;
+    }
 
-	public void setB(B b) {
-		this.b = b;
-	}
+    public void setB(B b) {
+        this.b = b;
+    }
 }

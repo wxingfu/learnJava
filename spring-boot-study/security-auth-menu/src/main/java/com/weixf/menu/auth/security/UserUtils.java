@@ -2,12 +2,12 @@ package com.weixf.menu.auth.security;
 
 import com.weixf.menu.auth.entity.SysUser;
 import com.weixf.menu.auth.springboot.service.SysUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +17,7 @@ import java.util.List;
 @Component
 public class UserUtils {
 
-    @Autowired
+    @Resource
     private SysUserService userService;
 
     /**

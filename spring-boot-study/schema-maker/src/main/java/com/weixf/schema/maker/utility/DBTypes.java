@@ -3,7 +3,7 @@ package com.weixf.schema.maker.utility;
 import org.springframework.stereotype.Component;
 
 /**
- * @author weixf
+ *
  * @since 2022-01-21
  */
 @Component
@@ -22,6 +22,7 @@ public class DBTypes {
     public final static int Update_Cascade = 2;
     public final static int Update_SetNull = 3;
     public final static int Update_SetDefault = 4;
+
     // Prevent instantiation
     private DBTypes() {
     }

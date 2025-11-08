@@ -3,14 +3,14 @@ package com.weixf.menu.auth.springboot.service;
 import com.weixf.menu.auth.custom.CommonService;
 import com.weixf.menu.auth.entity.SysRole;
 import com.weixf.menu.auth.springboot.repository.SysRoleRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
 public class SysRoleService extends CommonService<SysRole, Integer> {
-    @Autowired
+    @Resource
     private SysRoleRepository roleRepository;
 
     public List<SysRole> findByParent(SysRole role) {

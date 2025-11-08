@@ -2,10 +2,10 @@ package com.springframework.context;
 
 import java.util.EventObject;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public abstract class ApplicationEvent extends EventObject {
 

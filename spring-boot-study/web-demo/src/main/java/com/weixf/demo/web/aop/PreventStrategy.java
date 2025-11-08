@@ -1,9 +1,9 @@
 package com.weixf.demo.web.aop;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-09-16
+ *
+ * @since 2022-09-16
  * 防刷策略枚举
  */
 public enum PreventStrategy {

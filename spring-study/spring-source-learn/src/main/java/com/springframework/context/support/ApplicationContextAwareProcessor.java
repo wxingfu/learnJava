@@ -5,10 +5,10 @@ import com.springframework.beans.factory.config.BeanPostProcessor;
 import com.springframework.context.ApplicationContext;
 import com.springframework.context.ApplicationContextAware;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class ApplicationContextAwareProcessor implements BeanPostProcessor {
 

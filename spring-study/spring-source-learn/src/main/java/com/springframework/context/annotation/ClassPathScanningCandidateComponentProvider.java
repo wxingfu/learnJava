@@ -7,10 +7,10 @@ import com.springframework.stereotype.Component;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class ClassPathScanningCandidateComponentProvider {
 

@@ -1,17 +1,17 @@
-
 DROP TABLE IF EXISTS `persons`;
-CREATE TABLE `persons` (
-  `id` int(10) NOT NULL AUTO_INCREMENT COMMENT 'id',
-  `name` varchar(10) DEFAULT NULL COMMENT '姓名',
-  `age` int(10) DEFAULT NULL COMMENT '年龄',
-  `sex` varchar(5) DEFAULT NULL COMMENT '性别',
-  `address` varchar(50) DEFAULT NULL COMMENT '住址',
-  `sect` varchar(10) DEFAULT NULL COMMENT '门派',
-  `skill` varchar(10) DEFAULT NULL COMMENT '绝技',
-  `power` int(10) DEFAULT NULL COMMENT '战力值',
-  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `modify_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '修改时间',
-  PRIMARY KEY (`id`)
+CREATE TABLE `persons`
+(
+    `id`          int(10) NOT NULL AUTO_INCREMENT COMMENT 'id',
+    `name`        varchar(10) DEFAULT NULL COMMENT '姓名',
+    `age`         int(10) DEFAULT NULL COMMENT '年龄',
+    `sex`         varchar(5)  DEFAULT NULL COMMENT '性别',
+    `address`     varchar(50) DEFAULT NULL COMMENT '住址',
+    `sect`        varchar(10) DEFAULT NULL COMMENT '门派',
+    `skill`       varchar(10) DEFAULT NULL COMMENT '绝技',
+    `power`       int(10) DEFAULT NULL COMMENT '战力值',
+    `create_time` datetime    DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `modify_time` datetime    DEFAULT CURRENT_TIMESTAMP COMMENT '修改时间',
+    PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=451 DEFAULT CHARSET=utf8;
 
 

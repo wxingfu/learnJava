@@ -3,10 +3,10 @@ package com.springframework.context.support;
 import com.springframework.beans.factory.support.DefaultListableBeanFactory;
 import com.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public abstract class AbstractXmlApplicationContext extends AbstractRefreshableApplicationContext {
 

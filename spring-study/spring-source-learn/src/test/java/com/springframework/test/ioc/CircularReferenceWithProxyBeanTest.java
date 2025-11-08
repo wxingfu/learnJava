@@ -6,10 +6,10 @@ import com.springframework.test.bean.B;
 import org.junit.Assert;
 import org.junit.Test;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-24
+ *
+ * @since 2022-06-24
  */
 public class CircularReferenceWithProxyBeanTest {
 

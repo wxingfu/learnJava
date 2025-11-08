@@ -8,10 +8,10 @@ import com.springframework.stereotype.Component;
 
 import java.util.Set;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class ClassPathBeanDefinitionScanner extends ClassPathScanningCandidateComponentProvider {
 

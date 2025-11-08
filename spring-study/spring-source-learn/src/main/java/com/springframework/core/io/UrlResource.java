@@ -5,10 +5,10 @@ import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public class UrlResource implements Resource {
     private final URL url;

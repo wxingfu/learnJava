@@ -1,7 +1,6 @@
 package com.weixf.menu.auth.custom;
 
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -9,6 +8,8 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.annotation.Resource;
 
 /**
  * 公共Controller
@@ -22,7 +23,7 @@ public class CommonController<T extends BaseEntity<ID>, ID, Form extends BaseFor
     @SuppressWarnings("unchecked")
     private final Class<T> clazz = GenericsUtils.getSuperClassGenricType(getClass());
 
-    @Autowired
+    @Resource
     private CommonService<T, ID> baseService;
 
     // 数据显示页面

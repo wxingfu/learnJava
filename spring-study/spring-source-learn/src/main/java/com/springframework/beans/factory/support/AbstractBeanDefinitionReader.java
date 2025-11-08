@@ -4,10 +4,10 @@ import com.springframework.beans.BeansException;
 import com.springframework.core.io.DefaultResourceLoader;
 import com.springframework.core.io.ResourceLoader;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-23
+ *
+ * @since 2022-06-23
  */
 public abstract class AbstractBeanDefinitionReader implements BeanDefinitionReader {
 

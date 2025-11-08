@@ -5,10 +5,11 @@ import com.weixf.security.entity.SysUser;
 import com.weixf.security.security.entity.SecurityUser;
 import com.weixf.security.service.SysUserService;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
 
 /**
  * SpringSecurity用户的业务实现
@@ -16,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class SecurityUserDetailsService implements UserDetailsService {
 
-    @Autowired
+    @Resource
     private SysUserService sysUserService;
 
     /**

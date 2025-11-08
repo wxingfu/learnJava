@@ -848,7 +848,7 @@ public class WordExportTest {
     public void test21() {
         HighlightRenderData code = new HighlightRenderData();
         code.setCode("/**\n"
-                + " * @author John Smith <john.smith@example.com>\n"
+                + " * John Smith <john.smith@example.com>\n"
                 + "*/\n"
                 + "package l2f.gameserver.model;\n"
                 + "\n"

@@ -1,7 +1,7 @@
 package com.weixf.spring.utils;
 
 /**
- * @author weixf
+ *
  * @since 2022-03-07
  */
 public class PubFun {

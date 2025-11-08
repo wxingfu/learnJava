@@ -3,10 +3,10 @@ package com.springframework.test.common;
 import com.springframework.beans.factory.FactoryBean;
 import com.springframework.test.bean.Car;
 
-/*
+/**
  *
- * @author weixf
- * @date 2022-06-24
+ *
+ * @since 2022-06-24
  */
 public class CarFactoryBean implements FactoryBean<Car> {
 

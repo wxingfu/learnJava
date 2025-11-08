@@ -17,7 +17,7 @@ import java.util.Date;
 import java.util.Properties;
 
 /**
- * @author weixf
+ *
  * @since 2022-01-21
  */
 @Component

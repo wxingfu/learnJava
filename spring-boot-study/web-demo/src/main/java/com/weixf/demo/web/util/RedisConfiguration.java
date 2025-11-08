@@ -16,7 +16,6 @@
 
 package com.weixf.demo.web.util;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -29,13 +28,15 @@ import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
+import javax.annotation.Resource;
+
 /**
  * Redis配置
  */
 @Configuration
 public class RedisConfiguration {
 
-    @Autowired
+    @Resource
     private RedisConnectionFactory redisConnectionFactory;
 
     @Bean

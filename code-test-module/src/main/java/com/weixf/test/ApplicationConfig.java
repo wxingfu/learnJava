@@ -5,10 +5,10 @@ import org.apache.log4j.Logger;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-/*
+/**
  *
- * @author weixf
- * @date 2023-03-06
+ *
+ * @since 2023-03-06
  */
 public class ApplicationConfig {
 
