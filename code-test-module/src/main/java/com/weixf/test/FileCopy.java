@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FileCopyUtil {
+public class FileCopy {
 
     /**
      * 从A文件夹查找与B文件夹同名但后缀不同的文件，并复制到C文件夹
@@ -152,7 +152,8 @@ public class FileCopyUtil {
     public static void main(String[] args) {
         try {
             // 调用方法示例
-            FileCopyUtil.copyDifferentExtensionFiles("D:\\WorkSpace\\vscode\\test\\A", "D:\\WorkSpace\\vscode\\test\\B", "D:\\WorkSpace\\vscode\\test\\C");
+            // FileCopyUtil.copyDifferentExtensionFiles("D:\\WorkSpace\\vscode\\test\\A", "D:\\WorkSpace\\vscode\\test\\B", "D:\\WorkSpace\\vscode\\test\\C");
+            FileCopy.copyDifferentExtensionFiles("C:\\Users\\weixf\\Desktop\\照片刷选\\B", "C:\\Users\\weixf\\Desktop\\照片刷选\\A", "C:\\Users\\weixf\\Desktop\\照片刷选\\C");
         } catch (IOException e) {
             e.printStackTrace();
         }
