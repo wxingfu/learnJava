@@ -34,7 +34,6 @@ public class CommonUtil {
         }
     }
 
-    // 输出到文件
 
     /**
      * @param root     要在 Templet 中替换的内容
@@ -43,11 +42,7 @@ public class CommonUtil {
      * @param fileName 生成文件的名字
      * @throws Exception 异常
      */
-    public static void printFile(
-            Map<String, Object> root,
-            Template template,
-            String filePath,
-            String fileName) throws Exception {
+    public static void printFile(Map<String, Object> root, Template template, String filePath, String fileName) throws Exception {
         pathJudgeExist(filePath);
         File file = new File(filePath, fileName);
         if (!file.exists()) {
@@ -57,6 +52,7 @@ public class CommonUtil {
         template.process(root, out);
         out.close();
     }
+
 
     /**
      * 输出到控制台
@@ -70,6 +66,7 @@ public class CommonUtil {
         System.out.println(out);
     }
 
+
     /**
      * 首字母大写
      */
@@ -77,13 +74,12 @@ public class CommonUtil {
         return str.substring(0, 1).toUpperCase() + str.substring(1).toLowerCase();
     }
 
+
     /***
      * 下划线命名转为驼峰命名
      *
-     * @param para
-     *        下划线命名的字符串
+     * @param para 下划线命名的字符串
      */
-
     public static String underlineToHump(String para) {
         StringBuilder result = new StringBuilder();
         String[] a = para.split("_");
@@ -97,6 +93,7 @@ public class CommonUtil {
         }
         return result.toString();
     }
+
 
     /**
      * 将[数据库类型]转换成[Java类型],如果遇到没有写的类型,会出现Undefine,在后面补充即可
@@ -145,6 +142,7 @@ public class CommonUtil {
         return result;
     }
 
+
     /***
      * 驼峰命名转为下划线命名
      *
@@ -163,4 +161,5 @@ public class CommonUtil {
         }
         return sb.toString().toUpperCase();
     }
+
 }

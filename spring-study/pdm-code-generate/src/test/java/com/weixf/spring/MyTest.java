@@ -19,12 +19,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+
 @Slf4j
 @SpringBootTest
 public class MyTest {
 
     @Resource
     private Configuration configuration;
+
 
     @Test
     public void executeAll() throws Exception {
@@ -47,6 +49,7 @@ public class MyTest {
         propMap.put("userCountry", properties.getProperty("user.country"));
         return propMap;
     }
+
 
     @Test
     public void createSchema() throws Exception {
@@ -101,4 +104,6 @@ public class MyTest {
             e.printStackTrace();
         }
     }
+
+
 }

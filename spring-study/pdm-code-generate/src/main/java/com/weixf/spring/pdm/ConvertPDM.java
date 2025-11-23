@@ -28,17 +28,21 @@ public class ConvertPDM {
         return PKWhereClause.toString().trim();
     }
 
+
     public void setDBMSType(int DBMSType) {
         this.DBMSType = DBMSType;
     }
+
 
     public void setAllowErrorInPDM(boolean AllowErrorInPDM) {
         this.AllowErrorInPDM = AllowErrorInPDM;
     }
 
+
     public void setAllowJavaType(boolean AllowJavaType) {
         this.AllowJavaType = AllowJavaType;
     }
+
 
     public void setAllowJavaMath(boolean AllowJavaMath) {
         this.AllowJavaMath = AllowJavaMath;
@@ -47,9 +51,7 @@ public class ConvertPDM {
         }
     }
 
-    public ArrayList<PDMColumn> ConvertColumnType(
-            String tableName,
-            ArrayList<PDMColumn> columnArrayList) throws Exception {
+    public ArrayList<PDMColumn> ConvertColumnType(String tableName, ArrayList<PDMColumn> columnArrayList) throws Exception {
         ArrayList<PDMColumn> pdmColumnArrayList = new ArrayList<>();
         for (PDMColumn column : columnArrayList) {
             String id = column.getId();
@@ -68,17 +70,15 @@ public class ConvertPDM {
             String comment = column.getComment();
             PDMTable table = column.getTable();
 
-            PDMColumn pdmColumn = new PDMColumn(id, name, code, newDataType, length, precision,
-                    mandatory, defaultValue, lowValue, highValue, comment, table);
+            PDMColumn pdmColumn = new PDMColumn(id, name, code, newDataType, length, precision, mandatory, defaultValue, lowValue, highValue, comment, table);
             pdmColumnArrayList.add(pdmColumn);
         }
+
         return pdmColumnArrayList;
     }
 
-    private String changeType(
-            String oldType,
-            String tabName,
-            String colName) throws Exception {
+
+    private String changeType(String oldType, String tabName, String colName) throws Exception {
         oldType = oldType.toLowerCase().trim();
         String regex = null;
         if (oldType.indexOf("int") >= 0) {
@@ -215,11 +215,8 @@ public class ConvertPDM {
         return null;
     }
 
-    private void checkDataType(
-            String regex,
-            String dataType,
-            String tabName,
-            String colName) throws Exception {
+
+    private void checkDataType(String regex, String dataType, String tabName, String colName) throws Exception {
         if (!dataType.matches(regex)) {
             if (AllowErrorInPDM) {
                 log.error("表" + tabName + "的字段" + colName + "的类型错误:" + dataType);
@@ -229,16 +226,15 @@ public class ConvertPDM {
         }
     }
 
-    private void dealDbError(
-            String oldType,
-            String tabName,
-            String colName) throws Exception {
+
+    private void dealDbError(String oldType, String tabName, String colName) throws Exception {
         if (AllowErrorInPDM) {
             log.error("表" + tabName + "的字段" + colName + "的类型错误:" + oldType + "(" + DBConst.getDBName(DBMSType) + ")");
         } else {
             throw new Exception("表" + tabName + "的字段" + colName + "的数据类型不支持或错误:" + oldType);
         }
     }
+
 
     public String getInsertColumnClause(ArrayList<PDMColumn> newColumns) {
         StringBuilder InsertColumnClause = new StringBuilder(300);
@@ -248,6 +244,7 @@ public class ConvertPDM {
         InsertColumnClause.delete(0, 2);
         return InsertColumnClause.toString().trim();
     }
+
 
     public String getUpdateColumnClause(ArrayList<PDMColumn> newColumns) {
         // 生成UPDATE操作所需要的所有字段的字句。例如，ContNo = ? , PolNo = ?

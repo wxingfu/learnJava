@@ -17,10 +17,7 @@ public class PDMTable {
     public PDMTable() {
     }
 
-    public PDMTable(String id, String name, String code,
-                    PDMUser user, ArrayList<PDMColumn> columns,
-                    ArrayList<PDMKey> keys, PDMKey primaryKey,
-                    ArrayList<PDMIndex> indexs) {
+    public PDMTable(String id, String name, String code, PDMUser user, ArrayList<PDMColumn> columns, ArrayList<PDMKey> keys, PDMKey primaryKey, ArrayList<PDMIndex> indexs) {
         this.id = id;
         this.name = name;
         this.code = code;
